@@ -1,4 +1,3 @@
-console.log('ujuju!')
 const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
@@ -10,6 +9,12 @@ app.use(bodyParser.json())
 app.use(cors())
 
 app.get('/status', (req, res) => {
+  res.send({
+    message: 'alo ekipa'
+  })
+})
+
+app.post('/register', (req, res) => {
   res.send({
     message: 'alo ekipa'
   })
